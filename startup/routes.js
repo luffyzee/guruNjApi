@@ -15,5 +15,8 @@ module.exports = function(app) {
   app.use("/api/teachers", teachers);
   app.use("/api/aspects", aspects);
   app.use("/api/assessments", assessments);
+  app.get("/", (req, res) => {
+    res.send("Hani Putri");
+  });
   app.use(error);
 };
