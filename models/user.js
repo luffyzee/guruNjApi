@@ -28,7 +28,7 @@ function validateUser(user) {
       .min(5)
       .max(255)
       .required(),
-    value: Joi.string()
+    password: Joi.string()
       .min(5)
       .max(255)
       .required()
